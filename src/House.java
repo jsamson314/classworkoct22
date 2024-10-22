@@ -10,7 +10,7 @@ public class House implements Cloneable{
 
     public Object clone() throws CloneNotSupportedException {
         House house2 = (House) super.clone();
-        house2.owner = (Owner) super.clone();
+        house2.owner = (Owner) owner.clone();
         return house2;
     }
 
